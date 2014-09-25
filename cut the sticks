@@ -1,0 +1,19 @@
+def cuts(sti):
+    mstk = min(sti)
+    out = []
+    minus = 0
+    for i in range (len(sti)):
+        if sti[i]>mstk:
+            out.append(sti[i]-mstk)
+            minus +=1
+    return out, minus
+
+num = int(input())
+
+sticks = str(input()).split()
+
+print sticks
+    
+# while len(int)>0:
+#    sti, num = cuts(sti)
+#    print num

@@ -6,5 +6,8 @@ def cycle(n):
     else:
         return 2*cycle(n-1)
 leng= int(input())
+out = []
 for i in range(0,leng):
-    print(cycle(int(input())))
+    out.append(cycle(int(input())))
+for i in range(len(out)):
+    print out[i]
